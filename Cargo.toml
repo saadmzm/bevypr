@@ -1,0 +1,13 @@
+[package]
+name = "bevypr"
+version = "0.1.0"
+edition = "2024"
+authors = ["Saad Moazzam"]
+
+[dependencies]
+bevy = "0.15.3"
+bevy_panorbit_camera = "0.23.0"
+
+[profile.release]
+panic = "abort"
+opt-level = 3

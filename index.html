@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bevy WASM</title>
+        <link data-trunk rel="rust" data-bin="bevypr" />
+    </head>
+    <body>
+        <script type="module">
+            import init from './pkg/bevypr.js';
+            init().then(() => console.log("WASM loaded"))
+        </script>
+    </body>
+</html>
