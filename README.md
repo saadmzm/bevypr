@@ -2,8 +2,8 @@
 
 ## Native App
 
-- Run `cargo run` or `cargo run --release`
+- Use `cargo run` or `cargo run --release` in terminal.
 
-## WASM
+## Web
 
-- Run `trunk serve`
+- Run `trunk serve` in terminal.
