@@ -1,5 +1,5 @@
-use bevypr::scene;
+use bevypr::scene::scene;
 
 fn main() {
-    scene::scene();
+    scene();
 }
