@@ -13,7 +13,7 @@ path = "src/main.rs"
 
 [dependencies]
 bevy = "0.15.3"
-bevy_panorbit_camera = "0.23.0"
+bevy_panorbit_camera = "0.24.0"
 
 [profile.release]
 panic = "abort"
