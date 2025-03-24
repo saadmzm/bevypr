@@ -1,9 +1,22 @@
-use bevy::prelude::*;
+use bevy::{prelude::*, window::WindowMode};
 use bevy_panorbit_camera::{PanOrbitCamera, PanOrbitCameraPlugin};
+
+#[bevy_main]
+fn main() {
+    run_app();
+}
 
 pub fn run_app() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins(DefaultPlugins.set(WindowPlugin {
+            primary_window: Some(Window {
+                resizable: false,
+                mode: WindowMode::BorderlessFullscreen(MonitorSelection::Primary),
+                recognize_rotation_gesture: false,
+                ..default()
+            }),
+            ..default()
+        }))
         .add_plugins(PanOrbitCameraPlugin)
         .add_systems(Startup, setup)
         .run();
