@@ -5,14 +5,20 @@ edition = "2024"
 authors = ["Saad Moazzam"]
 
 [lib]
-crate-type = ["cdylib","rlib"]
+name = "bevypr"
+path = "src/lib.rs"
+crate-type = [
+    "staticlib",
+    "cdylib",
+    "rlib"
+]
 
 [[bin]]
-name = "bin"
+name = "bevypr"
 path = "src/main.rs"
 
 [dependencies]
-bevy = "0.15.3"
+bevy = "0.15.2"
 bevy_panorbit_camera = "0.24.0"
 
 [profile.release]
